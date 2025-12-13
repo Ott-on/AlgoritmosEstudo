@@ -1,0 +1,59 @@
+## =========================
+## Build / Output
+## =========================
+bin/
+obj/
+out/
+
+## =========================
+## Visual Studio
+## =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## =========================
+## Rider / VS Code
+## =========================
+.idea/
+.vscode/
+
+## =========================
+## .NET
+## =========================
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+## =========================
+## NuGet
+## =========================
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+## =========================
+## Test Results
+## =========================
+TestResults/
+coverage/
+coverage.cobertura.xml
+
+## =========================
+## Publish
+## =========================
+publish/
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+## =========================
+## ASP.NET Core
+## =========================
+appsettings.Development.json
+appsettings.
