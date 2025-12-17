@@ -2,6 +2,9 @@
 using Algoritmos_Aprendizagem.ListaEncadeada;
 using Algoritmos_Aprendizagem.OrdenacaoPorSelecao.DoubleSelectionSort;
 using Algoritmos_Aprendizagem.OrdenacaoPorSelecao.SelectionSort;
+using Algoritmos_Aprendizagem.Recursao.Fatorial;
+using Algoritmos_Aprendizagem.Recursao.Fibonacci;
+using Algoritmos_Aprendizagem.Recursao.Regressiva;
 
 // Pesquisa Binária
 IList<int> listaPesquisaBinaria = [1, 3, 5, 7, 9];
@@ -25,3 +28,11 @@ int[] listaOrdenacaoDuplaPorSelecao = [10, 4, 7, 2, 9, 11];
 Console.WriteLine($"Lista ordenada por seleção: {(string.Join(", ", SelectionSort.OrdenacaoPorSelecao(listaOrdenacaoPorSelecao)))}");
 Console.WriteLine($"Lista ordenada por seleção dupla: {(string.Join(", ", DoubleSelectionSort.OrdenacaoDuplaPorSelecao(listaOrdenacaoDuplaPorSelecao)))}");
 
+// Recursão
+Regressiva.ContagemRegressiva(5);
+Console.WriteLine($"Fatorial: {Fatorial.Fat(5)}");
+
+for (int i = 0; i <= 10; i++)
+{
+    Console.WriteLine(Fibonacci.Fibo(i));
+}
