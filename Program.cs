@@ -2,9 +2,12 @@
 using Algoritmos_Aprendizagem.ListaEncadeada;
 using Algoritmos_Aprendizagem.OrdenacaoPorSelecao.DoubleSelectionSort;
 using Algoritmos_Aprendizagem.OrdenacaoPorSelecao.SelectionSort;
+using Algoritmos_Aprendizagem.Recursao.Contagem;
 using Algoritmos_Aprendizagem.Recursao.Fatorial;
 using Algoritmos_Aprendizagem.Recursao.Fibonacci;
 using Algoritmos_Aprendizagem.Recursao.Regressiva;
+using Algoritmos_Aprendizagem.Recursao.Soma;
+using Algoritmos_Aprendizagem.Recursao.ValorMaisAltoNaLista;
 
 // Pesquisa Binária
 IList<int> listaPesquisaBinaria = [1, 3, 5, 7, 9];
@@ -36,3 +39,14 @@ for (int i = 0; i <= 10; i++)
 {
     Console.WriteLine(Fibonacci.Fibo(i));
 }
+
+int[] arr = [2, 4, 6];
+
+Console.WriteLine($"Soma recursiva = {Soma.FuncaoSoma(arr)}");
+
+int[] array = [1, 5, 7, 10];
+Console.WriteLine($"Contagem de números = {ContagemNumeros.Contagem(array)}");
+
+int[] valorMaior = [3, 2, 30, 6, 8, 10];
+Console.WriteLine($"Valor mais alto = {ValorMaisAltoNaLista.EncontrarValorMaisAlto(valorMaior)}");
+
